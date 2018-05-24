@@ -1,0 +1,39 @@
+{
+    "name": "bantenprov/verifikasi-pendaftaran",
+    "description": "VerifikasiPendaftaran",
+    "authors": [
+        {
+            "name": "bantenprov",
+            "email": "developer.bantenprov@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/verifikasi-pendaftaran,",
+      "issues": "https://github.com/bantenprov/verifikasi-pendaftaran/issues",
+      "wiki": "https://github.com/bantenprov/verifikasi-pendaftaran/wiki"
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Bantenprov\\VerifikasiPendaftaran\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bantenprov\\VerifikasiPendaftaran\\VerifikasiPendaftaranServiceProvider"
+            ],
+            "aliases": {                
+                "VerifikasiPendaftaran": "Bantenprov\\VerifikasiPendaftaran\\Facades\\VerifikasiPendaftaran"
+            }
+        }
+    }
+}
